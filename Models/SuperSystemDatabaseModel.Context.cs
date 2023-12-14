@@ -50,6 +50,5 @@ namespace SBIT3J_SuperSystem_Final.Models
         public virtual DbSet<SSS> SSSes { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Tax> Taxes { get; set; }
-        public virtual DbSet<AllSalesDetail> AllSalesDetails { get; set; }
     }
 }

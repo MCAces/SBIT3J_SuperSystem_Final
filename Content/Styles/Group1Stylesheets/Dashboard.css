@@ -1,78 +1,86 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
 }
-
 body {
-/*    border: 3px solid black;*/
+    border: 3px solid black;
     height: 100vh;
-    margin-left: 90px;
+    margin-left:90px;
+    
 }
 
-h2{
-    margin: 20px 0 0 50px;
+.dashboard-top-container{
+    width:100%;
+    height:220px;
+   /* background:red;*/
+    padding: 50px 20px 20px 20px;
+    display:flex;
+    justify-content:space-evenly;
+    column-gap:10px;
 }
-
-.dashboard-total-top-container {
-    width: 100%;
-    height: 220px;
-    /* background:red;*/
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    column-gap: 10px;
-}
-
 .dashboard-total-container {
     width: 300px;
     height: 150px;
     background: rgba(84, 22, 35, 1);
     border: 2px solid black;
-    padding: 15px;
     display: flex;
-    column-gap: 10px;
-    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
 }
 
 @media (max-width: 800px) {
-    .dashboard-total-top-container{
-        margin: 30px 0 0 0;
+    .dashboard-top-container{
         flex-direction: column;
-        row-gap: 10px;
-        padding: 0px;
-        align-items: center;
-        height: 100vh;
-    }
-    .dashboard-total-container {
-        width: 300px;
-        height: 180px;
+        row-gap:10px;
+        padding:0px;
+        align-items:center;
+        height:100vh;
+        
     }
 
-    h2 {
-        margin: 20px 20px 20px 50px;
+    .dashboard-total-container{
+        width:350px;
+        height:180px;
     }
-
 }
+
 .total-logo{
-    display:grid;
-    place-items:center;
-    margin-top:20px;
+    width:100px;
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .total-information-container {
-    color: #fcf5f4;
+    width: 100px;
+    height: 150px;
+    flex:1;
 }
+
 .total-information-container h2{
-    margin:0 0 10px 0;
     text-align:end;
+    margin-top:10px;
+    margin-bottom: 15px;
+    color: #fdf3f3;
 }
+
 
 .total-information-container h4{
-    font-weight:900;
-    margin: 0 0 10px 0;
-}
+   margin:0 0 10px 0;
+   font-weight:700;
+  color: #fdf3f3;
 
-.total-information-container h5{
-    font-weight:400;
+}
+.total-information-container h5 {
+   color: #fdf3f3;
+   font-weight:200;
+ }
+
+.graph-container{
+    width: 90%;
+    height: 500px;
+    border: 2px solid red;
+    margin-left:75px;
 }
