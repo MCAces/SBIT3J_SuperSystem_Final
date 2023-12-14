@@ -27,6 +27,8 @@ namespace SBIT3J_SuperSystem_Final.Models
         public Nullable<System.TimeSpan> Total_Hour_Worked { get; set; }
         public Nullable<System.DateTime> Absent { get; set; }
 
+       
+
         public virtual EmployeeAccount EmployeeAccount { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Payroll> Payrolls { get; set; }

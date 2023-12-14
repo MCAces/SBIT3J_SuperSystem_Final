@@ -49,7 +49,7 @@ namespace SBIT3J_SuperSystem_Final.Models
         public string Address { get; set; }
 
         [Required(ErrorMessage = "Phone Number is required.")]
-        [RegularExpression(@"^\d{10}$", ErrorMessage = "Invalid Phone Number.")]
+        [RegularExpression(@"^\d{11}$", ErrorMessage = "Invalid Phone Number.")]
         public string Phone_Number { get; set; }
 
         [Required(ErrorMessage = "Email is required.")]
